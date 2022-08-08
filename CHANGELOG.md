@@ -1,3 +1,3 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+Initial release. Extracted straight from Tellurium with a few modifications.
