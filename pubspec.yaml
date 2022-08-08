@@ -1,7 +1,7 @@
 name: aurum_country_code_picker
 description: The official country code picker from Tellurium by Quadren. Designed with our in-house Aurum design system.
 version: 1.0.0
-homepage: quadren.bio.link
+homepage: https://quadren.bio.link
 repository: https://github.com/quadren/country_code
 
 environment:
