@@ -1,22 +1,12 @@
 import 'dart:convert';
 
-import 'package:flutter/services.dart';
+import 'package:aurum_country_code_picker/src/codes.dart';
 
 abstract class CountryCodesService {
-  static Future<String> _loadFile() async {
-    final bundle = await rootBundle.load('assets/country_codes.json');
-    final bytes =
-        bundle.buffer.asUint8List(bundle.offsetInBytes, bundle.lengthInBytes);
-    return utf8.decode(bytes);
-  }
-
   static Future<Map<String, String>> loadCodes() async {
     Map<String, String> result = {};
 
-    final read = await _loadFile();
-    final List json = jsonDecode(read);
-
-    for (dynamic entry in json) {
+    for (dynamic entry in countryCodes) {
       final String? country = entry['name'];
       final int? code =
           int.tryParse(entry['dial_code'].toString().substring(1));
