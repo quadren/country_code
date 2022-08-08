@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 abstract class CountryCodesService {
   static Future<String> _loadFile() async {
-    final bundle = await rootBundle.load('lib/assets/country_codes.json');
+    final bundle = await rootBundle.load('assets/country_codes.json');
     final bytes =
         bundle.buffer.asUint8List(bundle.offsetInBytes, bundle.lengthInBytes);
     return utf8.decode(bytes);
