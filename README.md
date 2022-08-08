@@ -11,29 +11,29 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+The official country code picker from Tellurium by Quadren. Designed with our in-house Aurum design system.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+1. Supports searching for country code.
+2. Returns the country name and country code together.
+3. Highly opinionated design with Quadren's Aurum design system.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+All you need to do is call the country code picker function.
 
 ```dart
-const like = 'sample';
+final countryCode = await pickCountryCode(context);
+```
+
+That's it! Now you can access two paramters:
+
+```dart
+final String countryName = countryCode.country;
+final String code = countryCode.code;
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Please note that this package may see major or minor UI changes as our design system evolves and grows. 

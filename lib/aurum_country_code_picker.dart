@@ -219,8 +219,7 @@ class __CountryCodePickerState extends State<_CountryCodePicker> {
                 ?.copyWith(color: Theme.of(context).colorScheme.onBackground),
           )),
       onClick: () {
-        Navigator.of(context)
-            .pop(CountryCode(code: code, flag: '', country: country));
+        Navigator.of(context).pop(CountryCode(code: code, country: country));
       },
     );
   }
