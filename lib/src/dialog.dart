@@ -52,7 +52,7 @@ class _AuDialogState extends State<AuDialog>
 
   @override
   Widget build(BuildContext context) {
-    final Color bg = Theme.of(context).colorScheme.surface;
+    final Color bg = Theme.of(context).colorScheme.background;
 
     const BorderRadius rad = BorderRadius.only(
         topLeft: Radius.circular(22),
